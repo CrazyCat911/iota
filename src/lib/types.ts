@@ -1,3 +1,10 @@
+export enum Colors {
+	Red = 'red',
+	Blue = 'blue',
+	Green = 'green',
+	Yellow = 'yellow'
+}
+
 export enum Shapes {
 	Square = 'square',
 	Circle = 'circle',
@@ -12,21 +19,14 @@ export enum Numbers {
 	Four
 }
 
-export enum Colors {
-	Red = 'red',
-	Blue = 'blue',
-	Green = 'green',
-	Yellow = 'yellow'
-}
-
 export interface Position {
 	x: number;
 	y: number;
 }
 
 export interface Card {
-	shape: Shapes;
 	color: Colors;
+	shape: Shapes;
 	number: Numbers;
 }
 
